@@ -13,8 +13,4 @@ class MainActivity : AppCompatActivity() {
         composeView = findViewById<TalkBackComposeView>(R.id.compose_view)
     }
 
-    fun onBBB() {
-        val model: TalkBackComposeViewViewModel by viewModels()
-        model.showSettings.value = !model.showSettings.value
-    }
 }

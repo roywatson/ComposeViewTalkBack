@@ -17,10 +17,9 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 @Composable
 fun ComposeContent(
     onToggleShowSettings: () -> Unit,
+    scrimVisible: Boolean,
 ) {
-    val model: TalkBackComposeViewViewModel = viewModel()
-
-    if(model.showSettings.value) {
+    if(scrimVisible) {
         Surface(
             modifier = Modifier
                 .semantics(true) { isTraversalGroup = true }
