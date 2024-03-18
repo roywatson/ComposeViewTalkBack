@@ -16,6 +16,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 fun ComposeContent(
+    modifier: Modifier,
     onToggleShowSettings: () -> Unit,
     scrimVisible: Boolean,
 ) {
