@@ -22,11 +22,11 @@ To investigate whether, as an alternative to using an `AndroidView`, setting the
 
 In this example the overlaying scrim does prevent the TalkBack focus to be given to the underlying XML content by "leaking" tap events. 
 
-However, traversal does not behave as expected. Tapping on the scrim gives TalkBack focus to the scrim ... that is expected. Swiping right traverses through the 3 topbar "Settings" buttons ... this too is expected. The next right swipe traverses to the underlying XML content ... this is not expected.continuing to swipe right proceeds through the underlying XML content and eventually focuses on the underlying "BUTTON BUTTON BUTTON" widget which captures a double tap and closes the scrim ... this is not the expected behavior.
+However, traversal does not behave as expected. Tapping on the scrim gives TalkBack focus to the scrim ... that is expected. Swiping right traverses through the 3 topbar "Settings" buttons ... this too is expected. The next right swipe traverses to the underlying XML content ... this is not expected.continuing to swipe right proceeds through the underlying XML content and eventually focuses on the underlying "BUTTON BUTTON BUTTON" widget which captures a double tap and closes the scrim ... this is not the expected behavior.[Note: I newest push I simplified the architecture removing the viewmodel and as a result disabling the scrim close functionality on BUTTON BUTTON BUTTON. But you can still hear TB feedback on the button push].
 
 ### Attempted resolutions:
 
-I only attempted a few obvious mods. This project is removed enough from out current reality that I don't feel that it warrants a great deal of time or effort. Should this emerge as a viable alternative then we can use this demonstrator a basis to build upon.
+As this was only a 'give it a whirl' experiment, I only attempted a few obvious mods. This project is removed enough from out current reality that I don't feel that it warrants a great deal of time or effort. Should this emerge as a viable alternative then we can use this demonstrator a basis to build upon.
 
 ### Conclusion:
 
